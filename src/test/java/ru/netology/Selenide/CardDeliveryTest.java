@@ -28,7 +28,7 @@ public class CardDeliveryTest {
         open("http://localhost:9999");
         $(".input__control").setValue("Москва");
         $(".input__inner").doubleClick().sendKeys(Keys.BACK_SPACE);
-        $(".input__inner").setValue("date1");
+        $("[type='date']").setValue(String.valueOf(date1));
         $("[name='name']").setValue("Ольга Киреенко");
         $("[name='phone']").setValue("+79640000000");
         $(".checkbox__box").click();
